@@ -1,0 +1,79 @@
+---
+title: "Lab07 - linear models"
+output: pdf_document
+---
+
+## Goals
+
+The goal in this lab is to practice interpreting the coefficient estimates in simple linear regression models (linear models with one quantitative explanatory variable), conducting hypothesis tests, and finding confidence intervals for the coefficients.
+
+## Loading packages
+
+Here are some packages with functionality you may need for this lab.  Run this code chunk now.
+
+```{r}
+library(readr)
+library(ggplot2)
+library(gridExtra)
+library(mosaic)
+library(dplyr)
+
+options("pillar.sigfig" = 10) # print 10 significant digits in summarize output
+```
+
+## Leaf Margins
+
+For a variety of reasons, scientists are interested in the relationship between the climate of a region and characteristics of the plants and animals that live there.  For example, this could inform thinking about the impacts of climate change on natural resources, and could be used by paleontologists to learn about historical climatological conditions from the fossil record.
+
+In 1979, the US Geological service published a report discussing a variety of characteristics of forests throughout the world and discussed connections to the climates in those different regions (J. A. Wolfe, 1979, Temperature parameters of humid to mesic forests of eastern Asia and relation to forests of other regions of the Northern Hemisphere and Australasia, USGS Professional Paper, 1106).  One part of this report discussed the connection between the temperature of a region and the shapes of tree leaves in the forests in that region.  Generally, leaves can be described as either "serrated" (having a rough edge like a saw blade) or "entire" (having a smooth edge) - see the picture here: https://en.wikibooks.org/wiki/Historical_Geology/Leaf_shape_and_temperature.  One plot in the report displaysthe relationship between the mean annual temperature in a forested region (in degrees Celsius) and the percent of leaves in the forest canopy that are "entire".
+
+The following R code reads in the data:
+
+```{r}
+library(tidyverse)
+
+leaf <- read_csv("http://www.evanlray.com/data/misc/leaf_margins/leaf_margins.csv")
+head(leaf)
+```
+
+#### 1. Which variable in the data set is the explanatory variable and which is the response?
+
+
+
+#### 2. Make a scatter plot of the data with the explanatory variable on the horizontal axis and the response on the vertical axis.
+
+```{r}
+
+```
+
+#### 3. Fit a linear model to this data set and print out a summary of the model fit.
+
+```{r}
+
+```
+
+#### 4. Interpret the estimated intercept and slope in context.
+
+
+
+#### 5. Conduct a hypothesis test of the claim that the average temperature in a given location has no effect on the percent of leaves in forests there that are entire margined.  State your hypotheses in symbols and written sentences and interpret the p-value in terms of strength of evidence against the null hypothesis.  Do you know how you could find the p-value for this test given the estimate and a standard error of the estimate?
+
+```{r}
+
+```
+
+
+
+#### 6. Find a 95% confidence interval for the amount by which the average percent of leaves that are entire margined increases for each 1-degree increase in the average temperature.  Do you know how you could find the p-value for this test given the estimate and a standard error of the estimate?
+
+```{r}
+
+```
+
+#### 7. Conduct a hypothesis test of the claim that on average, in forests where the average temperature is 0 degrees C, 0 percent of leaves that are entire margined.
+
+```{r}
+
+```
+
+
