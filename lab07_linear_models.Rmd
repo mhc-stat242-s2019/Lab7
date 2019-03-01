@@ -76,4 +76,20 @@ head(leaf)
 
 ```
 
+#### 8. Find an estimate and a 95% confidence interval for the mean percent of leaves that are entire margined in forests where the mean annual temperature is 20 degrees C.
 
+```{r}
+
+```
+
+#### 9. Find a set of 3 Bonferroni-adjusted confidence intervals for the mean percent of leaves that are entire margined in forests where the mean annual temperature is 15 degrees C, 20 degrees C, and 25 degrees C.
+
+```{r}
+
+```
+
+#### 10. Create a scatterplot of the data with the estimated line overlaid on top, and Scheffe-based confidence intervals for the means at each value of $X$ in the range of the data shaded in.
+
+```{r}
+
+```
